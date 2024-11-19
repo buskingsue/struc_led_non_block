@@ -1,0 +1,331 @@
+
+non_b2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000021a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001a6  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800100  00800100  0000021a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000021a  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000024c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  0000028c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000008fc  00000000  00000000  000002c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000080b  00000000  00000000  00000bc0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000002d1  00000000  00000000  000013cb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000074  00000000  00000000  0000169c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000406  00000000  00000000  00001710  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000f9  00000000  00000000  00001b16  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000028  00000000  00000000  00001c0f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	50 c0       	rjmp	.+160    	; 0xe2 <__vector_16>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 ea       	ldi	r30, 0xA6	; 166
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a0 e0       	ldi	r26, 0x00	; 0
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a4 30       	cpi	r26, 0x04	; 4
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	41 d0       	rcall	.+130    	; 0x146 <main>
+  c4:	6e c0       	rjmp	.+220    	; 0x1a2 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <millisInit>:
+
+const uint8_t TIMER0_INITIAL_VALUE = 256 - (F_CPU / 64 / 1000);
+
+void millisInit()
+{
+	TCCR0 &= ~((1 << WGM01) | (1 << WGM00)); // 일반 모드 설정
+  c8:	83 b7       	in	r24, 0x33	; 51
+  ca:	87 7b       	andi	r24, 0xB7	; 183
+  cc:	83 bf       	out	0x33, r24	; 51
+	TCCR0 |= (1 << CS01) | (1 << CS00); // 프리스케일러 64 설정
+  ce:	83 b7       	in	r24, 0x33	; 51
+  d0:	83 60       	ori	r24, 0x03	; 3
+  d2:	83 bf       	out	0x33, r24	; 51
+	TIMSK |= (1 << TOIE0); // Timer0 오버플로우 인터럽트 활성화
+  d4:	87 b7       	in	r24, 0x37	; 55
+  d6:	81 60       	ori	r24, 0x01	; 1
+  d8:	87 bf       	out	0x37, r24	; 55
+	TCNT0 = TIMER0_INITIAL_VALUE; // Timer0 카운터 초기화
+  da:	86 e0       	ldi	r24, 0x06	; 6
+  dc:	82 bf       	out	0x32, r24	; 50
+	sei(); // 전역 인터럽트 활성화
+  de:	78 94       	sei
+  e0:	08 95       	ret
+
+000000e2 <__vector_16>:
+}
+
+ISR(TIMER0_OVF_vect)
+{
+  e2:	1f 92       	push	r1
+  e4:	0f 92       	push	r0
+  e6:	0f b6       	in	r0, 0x3f	; 63
+  e8:	0f 92       	push	r0
+  ea:	11 24       	eor	r1, r1
+  ec:	8f 93       	push	r24
+  ee:	9f 93       	push	r25
+  f0:	af 93       	push	r26
+  f2:	bf 93       	push	r27
+	TCNT0 = TIMER0_INITIAL_VALUE; // 타이머 값을 재설정
+  f4:	86 e0       	ldi	r24, 0x06	; 6
+  f6:	82 bf       	out	0x32, r24	; 50
+	timer0_millis++; // 밀리초 카운터 증가
+  f8:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  fc:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 100:	a0 91 02 01 	lds	r26, 0x0102	; 0x800102 <__DATA_REGION_ORIGIN__+0x2>
+ 104:	b0 91 03 01 	lds	r27, 0x0103	; 0x800103 <__DATA_REGION_ORIGIN__+0x3>
+ 108:	01 96       	adiw	r24, 0x01	; 1
+ 10a:	a1 1d       	adc	r26, r1
+ 10c:	b1 1d       	adc	r27, r1
+ 10e:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 112:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 116:	a0 93 02 01 	sts	0x0102, r26	; 0x800102 <__DATA_REGION_ORIGIN__+0x2>
+ 11a:	b0 93 03 01 	sts	0x0103, r27	; 0x800103 <__DATA_REGION_ORIGIN__+0x3>
+}
+ 11e:	bf 91       	pop	r27
+ 120:	af 91       	pop	r26
+ 122:	9f 91       	pop	r25
+ 124:	8f 91       	pop	r24
+ 126:	0f 90       	pop	r0
+ 128:	0f be       	out	0x3f, r0	; 63
+ 12a:	0f 90       	pop	r0
+ 12c:	1f 90       	pop	r1
+ 12e:	18 95       	reti
+
+00000130 <millis>:
+
+uint32_t millis()
+{
+	uint32_t millis_copy;
+	cli(); // 일관된 값을 읽기 위해 인터럽트 비활성화
+ 130:	f8 94       	cli
+	millis_copy = timer0_millis;
+ 132:	60 91 00 01 	lds	r22, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 136:	70 91 01 01 	lds	r23, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 13a:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <__DATA_REGION_ORIGIN__+0x2>
+ 13e:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <__DATA_REGION_ORIGIN__+0x3>
+	sei(); // 인터럽트 활성화
+ 142:	78 94       	sei
+	return millis_copy;
+}
+ 144:	08 95       	ret
+
+00000146 <main>:
+
+int main(void)
+{
+	millisInit();
+ 146:	c0 df       	rcall	.-128    	; 0xc8 <millisInit>
+	DDRA = 0xff; // PORTA를 출력으로 설정
+ 148:	8f ef       	ldi	r24, 0xFF	; 255
+ 14a:	8a bb       	out	0x1a, r24	; 26
+	DDRB = 0xff; // PORTB를 출력으로 설정
+ 14c:	87 bb       	out	0x17, r24	; 23
+	PORTA = 0x00; // PORTA를 LOW로 초기화
+ 14e:	1b ba       	out	0x1b, r1	; 27
+	PORTB = 0x00; // PORTB를 LOW로 초기화
+ 150:	18 ba       	out	0x18, r1	; 24
+
+	uint32_t prevTime1 = 0;
+	uint32_t prevTime2 = 0;
+ 152:	81 2c       	mov	r8, r1
+ 154:	91 2c       	mov	r9, r1
+ 156:	54 01       	movw	r10, r8
+	DDRA = 0xff; // PORTA를 출력으로 설정
+	DDRB = 0xff; // PORTB를 출력으로 설정
+	PORTA = 0x00; // PORTA를 LOW로 초기화
+	PORTB = 0x00; // PORTB를 LOW로 초기화
+
+	uint32_t prevTime1 = 0;
+ 158:	c1 2c       	mov	r12, r1
+ 15a:	d1 2c       	mov	r13, r1
+	uint32_t prevTime2 = 0;
+
+	while (1)
+	{
+		uint32_t currentTime = millis();
+ 15c:	76 01       	movw	r14, r12
+ 15e:	e8 df       	rcall	.-48     	; 0x130 <millis>
+
+		// B 포트 1초 (1000ms)
+		if (currentTime - prevTime1 >= 1000)
+ 160:	8b 01       	movw	r16, r22
+ 162:	9c 01       	movw	r18, r24
+ 164:	0c 19       	sub	r16, r12
+ 166:	1d 09       	sbc	r17, r13
+ 168:	2e 09       	sbc	r18, r14
+ 16a:	3f 09       	sbc	r19, r15
+ 16c:	08 3e       	cpi	r16, 0xE8	; 232
+ 16e:	13 40       	sbci	r17, 0x03	; 3
+ 170:	21 05       	cpc	r18, r1
+ 172:	31 05       	cpc	r19, r1
+ 174:	28 f0       	brcs	.+10     	; 0x180 <main+0x3a>
+		{
+			prevTime1 = currentTime;
+			PORTB ^= 0xff; // PORTB 토글
+ 176:	28 b3       	in	r18, 0x18	; 24
+ 178:	20 95       	com	r18
+ 17a:	28 bb       	out	0x18, r18	; 24
+		uint32_t currentTime = millis();
+
+		// B 포트 1초 (1000ms)
+		if (currentTime - prevTime1 >= 1000)
+		{
+			prevTime1 = currentTime;
+ 17c:	6b 01       	movw	r12, r22
+ 17e:	7c 01       	movw	r14, r24
+			PORTB ^= 0xff; // PORTB 토글
+		}
+		// A 포트 0.5초 (500ms)
+		if (currentTime - prevTime2 >= 500)
+ 180:	8b 01       	movw	r16, r22
+ 182:	9c 01       	movw	r18, r24
+ 184:	08 19       	sub	r16, r8
+ 186:	19 09       	sbc	r17, r9
+ 188:	2a 09       	sbc	r18, r10
+ 18a:	3b 09       	sbc	r19, r11
+ 18c:	04 3f       	cpi	r16, 0xF4	; 244
+ 18e:	11 40       	sbci	r17, 0x01	; 1
+ 190:	21 05       	cpc	r18, r1
+ 192:	31 05       	cpc	r19, r1
+ 194:	20 f3       	brcs	.-56     	; 0x15e <main+0x18>
+		{
+			prevTime2 = currentTime;
+			PORTA ^= 0xff; // PORTA 토글
+ 196:	2b b3       	in	r18, 0x1b	; 27
+ 198:	20 95       	com	r18
+ 19a:	2b bb       	out	0x1b, r18	; 27
+			PORTB ^= 0xff; // PORTB 토글
+		}
+		// A 포트 0.5초 (500ms)
+		if (currentTime - prevTime2 >= 500)
+		{
+			prevTime2 = currentTime;
+ 19c:	4b 01       	movw	r8, r22
+ 19e:	5c 01       	movw	r10, r24
+ 1a0:	de cf       	rjmp	.-68     	; 0x15e <main+0x18>
+
+000001a2 <_exit>:
+ 1a2:	f8 94       	cli
+
+000001a4 <__stop_program>:
+ 1a4:	ff cf       	rjmp	.-2      	; 0x1a4 <__stop_program>
